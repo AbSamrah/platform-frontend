@@ -14,13 +14,15 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Ubuntu",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Ubuntu", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #282828; /* Color for headings, subheadings and title throughout the website */
@@ -31,7 +33,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #5b5b5b;  /* The default color of the main navmenu links */
+  --nav-color: #5b5b5b; /* The default color of the main navmenu links */
   --nav-hover-color: #ea7c00; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -151,7 +153,8 @@ h6 {
   padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .header .logo {
@@ -259,12 +262,12 @@ h6 {
     position: relative;
   }
 
-  .navmenu>ul>li {
+  .navmenu > ul > li {
     white-space: nowrap;
     padding: 15px 14px;
   }
 
-  .navmenu>ul>li:last-child {
+  .navmenu > ul > li:last-child {
     padding-right: 0;
   }
 
@@ -291,7 +294,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu>ul>li>a:before {
+  .navmenu > ul > li > a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -304,13 +307,13 @@ h6 {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover>a:before,
+  .navmenu li:hover > a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-color);
@@ -349,11 +352,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -365,7 +368,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -467,7 +470,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -494,7 +497,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -508,7 +511,8 @@ h6 {
   font-size: 14px;
   padding: 80px 0 0;
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .footer .footer-content .logo {
@@ -546,10 +550,11 @@ h6 {
   display: flex;
   border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0 2px 10px color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0 2px 10px
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.footer .newsletter-form input[type=email] {
+.footer .newsletter-form input[type="email"] {
   flex: 1;
   padding: 12px 20px;
   border: none;
@@ -558,12 +563,12 @@ h6 {
   font-size: 14px;
 }
 
-.footer .newsletter-form input[type=email]:focus {
+.footer .newsletter-form input[type="email"]:focus {
   outline: none;
   box-shadow: none;
 }
 
-.footer .newsletter-form input[type=email]::placeholder {
+.footer .newsletter-form input[type="email"]::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
@@ -709,7 +714,8 @@ h6 {
   margin-top: 50px;
   padding: 25px 0;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .footer .footer-bottom .copyright p {
@@ -795,8 +801,8 @@ h6 {
   }
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   color: var(--default-color);
   background-color: var(--surface-color);
@@ -804,14 +810,14 @@ textarea {
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-input[type=text]:focus,
-input[type=email]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
 textarea:focus {
   border-color: var(--accent-color);
 }
 
-input[type=text]::placeholder,
-input[type=email]::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
 textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
@@ -819,14 +825,14 @@ textarea::placeholder {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   inset: 0;
   z-index: 9999;
   overflow: hidden;
   background-color: var(--background-color);
   transition: all 0.6s ease-out;
-}
+} 
 
 #preloader:before {
   content: "";
@@ -849,7 +855,7 @@ textarea::placeholder {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -927,11 +933,11 @@ textarea::placeholder {
   font-weight: 400;
 }
 
-.page-title nav ol li+li {
+.page-title nav ol li + li {
   padding-left: 10px;
 }
 
-.page-title nav ol li+li::before {
+.page-title nav ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -951,7 +957,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 57px;
@@ -1015,8 +1020,7 @@ section,
   padding: 140px 0 60px 0;
 }
 
-@media (max-width: 768px),
-(max-height: 480px) {
+@media (max-width: 768px), (max-height: 480px) {
   .hero .info {
     padding: 100px 50px 60px 50px;
   }
@@ -1101,7 +1105,11 @@ section,
 
 .hero .carousel-item::before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 30%
+  );
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1633,7 +1641,6 @@ section,
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1673,13 +1680,18 @@ section,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #6c5ce7 50%) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--accent-color) 0%,
+    color-mix(in srgb, var(--accent-color), #6c5ce7 50%) 100%
+  );
   color: var(--contrast-color);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 4px 15px
+    color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .call-to-action .badge i {
@@ -1746,14 +1758,20 @@ section,
 }
 
 .call-to-action .cta-buttons .btn.btn-primary {
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #6c5ce7 50%) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--accent-color) 0%,
+    color-mix(in srgb, var(--accent-color), #6c5ce7 50%) 100%
+  );
   color: var(--contrast-color);
-  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 6px 20px
+    color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
 .call-to-action .cta-buttons .btn.btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 50%);
+  box-shadow: 0 8px 25px
+    color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
 .call-to-action .cta-buttons .btn.btn-outline {
@@ -1807,7 +1825,11 @@ section,
   right: -50%;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent-color), transparent 95%) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -1836,7 +1858,7 @@ section,
   }
 }
 
-.features .features-content>p {
+.features .features-content > p {
   font-size: 1.1rem;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 2.5rem;
@@ -1851,7 +1873,8 @@ section,
   padding: 2rem;
   background: var(--surface-color);
   border-radius: 20px;
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
+  box-shadow: 0 10px 30px
+    color-mix(in srgb, var(--default-color), transparent 92%);
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
@@ -1867,14 +1890,19 @@ section,
   flex-shrink: 0;
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6a11cb 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6a11cb 30%)
+  );
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--contrast-color);
   font-size: 2rem;
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 8px 25px
+    color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
 .features .main-feature .feature-text h4 {
@@ -1894,20 +1922,26 @@ section,
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6a11cb 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6a11cb 30%)
+  );
   color: var(--contrast-color);
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 8px 25px
+    color-mix(in srgb, var(--accent-color), transparent 60%);
   border: none;
 }
 
 .features .btn-get-started:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px color-mix(in srgb, var(--accent-color), transparent 50%);
+  box-shadow: 0 12px 35px
+    color-mix(in srgb, var(--accent-color), transparent 50%);
   color: var(--contrast-color);
 }
 
@@ -1941,14 +1975,19 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 98%) 0%, transparent 100%);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 98%) 0%,
+    transparent 100%
+  );
   opacity: 0;
   transition: all 0.3s ease;
 }
 
 .features .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 88%);
+  box-shadow: 0 20px 40px
+    color-mix(in srgb, var(--default-color), transparent 88%);
   border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
@@ -1958,7 +1997,11 @@ section,
 
 .features .feature-card:hover .icon-wrapper {
   transform: scale(1.1);
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6a11cb 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6a11cb 30%)
+  );
   color: var(--contrast-color);
 }
 
@@ -2264,7 +2307,11 @@ section,
 
 .pricing .pricing-item.featured {
   border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--accent-color), transparent 97%), var(--surface-color));
+  background: linear-gradient(
+    to bottom right,
+    color-mix(in srgb, var(--accent-color), transparent 97%),
+    var(--surface-color)
+  );
 }
 
 .pricing .pricing-item.featured .pricing-badge {
@@ -2684,7 +2731,11 @@ section,
   position: absolute;
   top: 20px;
   left: 20px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000 20%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #000 20%)
+  );
   color: var(--contrast-color);
   padding: 8px 16px;
   border-radius: 50px;
@@ -2858,7 +2909,11 @@ section,
   font-size: 12px;
   font-weight: 600;
   padding: 6px 12px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 90%), color-mix(in srgb, var(--accent-color), transparent 80%));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 90%),
+    color-mix(in srgb, var(--accent-color), transparent 80%)
+  );
   color: var(--accent-color);
   border-radius: 50px;
   text-transform: uppercase;
@@ -3066,7 +3121,7 @@ section,
   border-radius: 2px;
 }
 
-.contact .contact-form-container>p {
+.contact .contact-form-container > p {
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -3128,7 +3183,8 @@ section,
 .contact .contact-form-container .php-email-form button:hover {
   background-color: color-mix(in srgb, var(--accent-color), #000 15%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px color-mix(in srgb, var(--accent-color), transparent 75%);
+  box-shadow: 0 6px 15px
+    color-mix(in srgb, var(--accent-color), transparent 75%);
 }
 
 .contact .contact-form-container .php-email-form .social-links {
@@ -3178,21 +3234,35 @@ section,
   box-shadow: 0 20px 60px rgba(54, 144, 231, 0.1);
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-wrapper {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-wrapper {
   height: auto !important;
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-slide img {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-slide
+  img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-pagination {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-pagination {
   bottom: 20px;
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   background: var(--surface-color);
   opacity: 0.5;
   width: 12px;
@@ -3200,14 +3270,24 @@ section,
   transition: all 0.3s ease;
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--accent-color);
   opacity: 1;
   transform: scale(1.2);
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-button-next,
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-button-prev {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-button-next,
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-button-prev {
   color: var(--surface-color);
   background: rgba(54, 144, 231, 0.8);
   width: 50px;
@@ -3216,20 +3296,36 @@ section,
   transition: all 0.3s ease;
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-button-next:after,
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-button-prev:after {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-button-next:after,
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-button-prev:after {
   font-size: 18px;
   font-weight: 600;
 }
 
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-button-next:hover,
-.portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-button-prev:hover {
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-button-next:hover,
+.portfolio-details
+  .portfolio-slider-container
+  .portfolio-details-slider
+  .swiper-button-prev:hover {
   background: var(--accent-color);
   transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
-  .portfolio-details .portfolio-slider-container .portfolio-details-slider .swiper-slide img {
+  .portfolio-details
+    .portfolio-slider-container
+    .portfolio-details-slider
+    .swiper-slide
+    img {
     height: 250px;
   }
 }
@@ -3271,15 +3367,26 @@ section,
   border: 1px solid rgba(54, 144, 231, 0.1);
 }
 
-.portfolio-details .project-description .feature-highlights .feature-item:hover {
+.portfolio-details
+  .project-description
+  .feature-highlights
+  .feature-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(54, 144, 231, 0.15);
 }
 
-.portfolio-details .project-description .feature-highlights .feature-item .feature-icon {
+.portfolio-details
+  .project-description
+  .feature-highlights
+  .feature-item
+  .feature-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6c5ce7 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6c5ce7 30%)
+  );
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -3287,19 +3394,34 @@ section,
   flex-shrink: 0;
 }
 
-.portfolio-details .project-description .feature-highlights .feature-item .feature-icon i {
+.portfolio-details
+  .project-description
+  .feature-highlights
+  .feature-item
+  .feature-icon
+  i {
   color: var(--contrast-color);
   font-size: 22px;
 }
 
-.portfolio-details .project-description .feature-highlights .feature-item .feature-content h4 {
+.portfolio-details
+  .project-description
+  .feature-highlights
+  .feature-item
+  .feature-content
+  h4 {
   color: var(--heading-color);
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
 }
 
-.portfolio-details .project-description .feature-highlights .feature-item .feature-content p {
+.portfolio-details
+  .project-description
+  .feature-highlights
+  .feature-item
+  .feature-content
+  p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 0;
   font-size: 14px;
@@ -3319,7 +3441,11 @@ section,
   gap: 12px;
 }
 
-.portfolio-details .project-description .technologies-used .tech-stack .tech-tag {
+.portfolio-details
+  .project-description
+  .technologies-used
+  .tech-stack
+  .tech-tag {
   background: var(--surface-color);
   color: var(--accent-color);
   padding: 8px 18px;
@@ -3330,7 +3456,11 @@ section,
   transition: all 0.3s ease;
 }
 
-.portfolio-details .project-description .technologies-used .tech-stack .tech-tag:hover {
+.portfolio-details
+  .project-description
+  .technologies-used
+  .tech-stack
+  .tech-tag:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
@@ -3455,7 +3585,11 @@ section,
 }
 
 .portfolio-details .project-stats-card {
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6c5ce7 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6c5ce7 30%)
+  );
   padding: 35px;
   border-radius: 20px;
   margin-bottom: 30px;
@@ -3552,7 +3686,11 @@ section,
   line-height: 1.5;
 }
 
-.portfolio-details .related-projects .related-item .related-content .related-link {
+.portfolio-details
+  .related-projects
+  .related-item
+  .related-content
+  .related-link {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 500;
@@ -3560,16 +3698,30 @@ section,
   transition: all 0.3s ease;
 }
 
-.portfolio-details .related-projects .related-item .related-content .related-link i {
+.portfolio-details
+  .related-projects
+  .related-item
+  .related-content
+  .related-link
+  i {
   margin-left: 5px;
   transition: transform 0.3s ease;
 }
 
-.portfolio-details .related-projects .related-item .related-content .related-link:hover {
+.portfolio-details
+  .related-projects
+  .related-item
+  .related-content
+  .related-link:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
-.portfolio-details .related-projects .related-item .related-content .related-link:hover i {
+.portfolio-details
+  .related-projects
+  .related-item
+  .related-content
+  .related-link:hover
+  i {
   transform: translateX(3px);
 }
 
@@ -3599,7 +3751,11 @@ section,
     gap: 15px;
   }
 
-  .portfolio-details .project-description .technologies-used .tech-stack .tech-tag {
+  .portfolio-details
+    .project-description
+    .technologies-used
+    .tech-stack
+    .tech-tag {
     padding: 6px 14px;
     font-size: 13px;
   }
@@ -3664,10 +3820,18 @@ section,
   margin-bottom: 20px;
 }
 
-.service-details .service-main-content .features-included .feature-item .feature-icon {
+.service-details
+  .service-main-content
+  .features-included
+  .feature-item
+  .feature-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #8b5cf6 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #8b5cf6 30%)
+  );
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -3675,19 +3839,34 @@ section,
   flex-shrink: 0;
 }
 
-.service-details .service-main-content .features-included .feature-item .feature-icon i {
+.service-details
+  .service-main-content
+  .features-included
+  .feature-item
+  .feature-icon
+  i {
   font-size: 1.5rem;
   color: var(--contrast-color);
 }
 
-.service-details .service-main-content .features-included .feature-item .feature-content h5 {
+.service-details
+  .service-main-content
+  .features-included
+  .feature-item
+  .feature-content
+  h5 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 8px;
   color: var(--heading-color);
 }
 
-.service-details .service-main-content .features-included .feature-item .feature-content p {
+.service-details
+  .service-main-content
+  .features-included
+  .feature-item
+  .feature-content
+  p {
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   line-height: 1.6;
@@ -3729,7 +3908,11 @@ section,
 .service-details .service-main-content .process-steps .step-item .step-number {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #8b5cf6 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #8b5cf6 30%)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -3740,14 +3923,24 @@ section,
   flex-shrink: 0;
 }
 
-.service-details .service-main-content .process-steps .step-item .step-content h5 {
+.service-details
+  .service-main-content
+  .process-steps
+  .step-item
+  .step-content
+  h5 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 8px;
   color: var(--heading-color);
 }
 
-.service-details .service-main-content .process-steps .step-item .step-content p {
+.service-details
+  .service-main-content
+  .process-steps
+  .step-item
+  .step-content
+  p {
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   line-height: 1.6;
@@ -3787,7 +3980,8 @@ section,
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .service-details .service-sidebar .service-info-card .info-item:last-child {
@@ -3807,7 +4001,11 @@ section,
 .service-details .service-sidebar .testimonial-card .quote-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #8b5cf6 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #8b5cf6 30%)
+  );
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -3833,21 +4031,35 @@ section,
   gap: 15px;
 }
 
-.service-details .service-sidebar .testimonial-card .testimonial-author .author-image {
+.service-details
+  .service-sidebar
+  .testimonial-card
+  .testimonial-author
+  .author-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.service-details .service-sidebar .testimonial-card .testimonial-author .author-info h6 {
+.service-details
+  .service-sidebar
+  .testimonial-card
+  .testimonial-author
+  .author-info
+  h6 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 4px;
   color: var(--heading-color);
 }
 
-.service-details .service-sidebar .testimonial-card .testimonial-author .author-info span {
+.service-details
+  .service-sidebar
+  .testimonial-card
+  .testimonial-author
+  .author-info
+  span {
   font-size: 0.9rem;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
@@ -3870,7 +4082,11 @@ section,
 }
 
 .service-details .service-sidebar .cta-card .btn {
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #8b5cf6 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #8b5cf6 30%)
+  );
   border: none;
   border-radius: 12px;
   padding: 12px 30px;
@@ -3902,7 +4118,11 @@ section,
   color: var(--accent-color);
 }
 
-.service-details .service-sidebar .cta-card .contact-info .contact-item:last-child {
+.service-details
+  .service-sidebar
+  .cta-card
+  .contact-info
+  .contact-item:last-child {
   margin-bottom: 0;
 }
 
@@ -3975,7 +4195,11 @@ section,
   position: absolute;
   top: 20px;
   left: 20px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000 20%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #000 20%)
+  );
   color: var(--contrast-color);
   padding: 8px 16px;
   border-radius: 50px;
@@ -4149,7 +4373,11 @@ section,
   font-size: 12px;
   font-weight: 600;
   padding: 6px 12px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 90%), color-mix(in srgb, var(--accent-color), transparent 80%));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 90%),
+    color-mix(in srgb, var(--accent-color), transparent 80%)
+  );
   color: var(--accent-color);
   border-radius: 50px;
   text-transform: uppercase;
@@ -4351,7 +4579,7 @@ section,
   margin: 0;
 }
 
-.blog-details .meta-top ul li+li {
+.blog-details .meta-top ul li + li {
   padding-left: 20px;
 }
 
@@ -4371,7 +4599,8 @@ section,
 
 .blog-details .meta-bottom {
   padding-top: 10px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .blog-details .meta-bottom i {
@@ -4410,7 +4639,7 @@ section,
   display: inline-block;
 }
 
-.blog-details .meta-bottom .tags li+li::before {
+.blog-details .meta-bottom .tags li + li::before {
   padding-right: 6px;
   color: var(--default-color);
   content: ",";
@@ -4632,7 +4861,7 @@ section,
   transition: 0.3s;
 }
 
-.search-widget form input[type=text] {
+.search-widget form input[type="text"] {
   border: 0;
   padding: 4px 10px;
   border-radius: 4px;
@@ -4641,7 +4870,7 @@ section,
   color: var(--default-color);
 }
 
-.search-widget form input[type=text]:focus {
+.search-widget form input[type="text"]:focus {
   outline: none;
 }
 

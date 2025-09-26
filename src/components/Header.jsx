@@ -3,30 +3,31 @@ import React from "react";
 function Header() {
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
-      <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a href="index.html" className="logo d-flex align-items-center">
-          <h1 className="d-flex align-items-center">Newf</h1>
+      <div className="container position-relative d-flex align-items-center justify-content-between">
+        <a
+          href="index.html"
+          className="logo d-flex align-items-center me-auto me-xl-0">
+          <h1 className="sitename">Shamamis</h1>
+          <span>.</span>
         </a>
-        <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-        <nav id="navbar" className="navbar">
+        <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <a href="index.html" className="active">
+              <a href="#hero" className="active">
                 Home
               </a>
             </li>
             <li>
-              <a href="about.html">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="services.html">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="portfolio.html">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="team.html">Team</a>
+              <a href="#pricing">Pricing</a>
             </li>
             <li>
               <a href="blog.html">Blog</a>
@@ -34,7 +35,7 @@ function Header() {
             <li className="dropdown">
               <a href="#">
                 <span>Dropdown</span>{" "}
-                <i className="bi bi-chevron-down dropdown-indicator"></i>
+                <i className="bi bi-chevron-down toggle-dropdown"></i>
               </a>
               <ul>
                 <li>
@@ -43,7 +44,7 @@ function Header() {
                 <li className="dropdown">
                   <a href="#">
                     <span>Deep Dropdown</span>{" "}
-                    <i className="bi bi-chevron-down dropdown-indicator"></i>
+                    <i className="bi bi-chevron-down toggle-dropdown"></i>
                   </a>
                   <ul>
                     <li>
@@ -60,10 +61,14 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
+          <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+        <a className="cta-btn" href="#about">
+          Get Started
+        </a>
       </div>
     </header>
   );
