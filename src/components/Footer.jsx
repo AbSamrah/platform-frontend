@@ -10,7 +10,7 @@ function Footer() {
               <a
                 href="index.html"
                 className="logo d-flex align-items-center mb-4">
-                <span className="sitename">Strive</span>
+                <span className="sitename">Shamamis</span>
               </a>
               <p className="mb-4">
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -39,7 +39,7 @@ function Footer() {
           <div className="copyright">
             <p>
               © <span>Copyright</span>{" "}
-              <strong className="px-1 sitename">Strive</strong>{" "}
+              <strong className="px-1 sitename">Shamamis</strong>{" "}
               <span>All Rights Reserved</span>
             </p>
           </div>

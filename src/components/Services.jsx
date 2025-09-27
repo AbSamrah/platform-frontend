@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import apiClient from "../Api"; // Import the api client
+import apiClient from "../Api";
 
 function Services() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    // Fetch services from the API
     apiClient
       .get("/services")
       .then((response) => {
@@ -14,7 +13,7 @@ function Services() {
       .catch((error) => {
         console.error("There was an error fetching the services!", error);
       });
-  }, []); // The empty dependency array ensures this runs only once
+  }, []);
 
   return (
     <section id="services" className="services section">

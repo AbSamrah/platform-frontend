@@ -17,9 +17,7 @@ function Hero() {
                 clients, attract opportunities, and strengthen your brand
                 identity.
               </p>
-              <a href="#featured-services" className="btn-get-started">
-                Get Started
-              </a>
+              <a />
             </div>
           </div>
         </div>

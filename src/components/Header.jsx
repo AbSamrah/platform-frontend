@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Header() {
+  const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!isMobileNavOpen);
+  };
+
+  useEffect(() => {
+    if (isMobileNavOpen) {
+      document.body.classList.add("mobile-nav-active");
+    } else {
+      document.body.classList.remove("mobile-nav-active");
+    }
+
+    return () => {
+      document.body.classList.remove("mobile-nav-active");
+    };
+  }, [isMobileNavOpen]);
+
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container position-relative d-flex align-items-center justify-content-between">
@@ -10,10 +28,11 @@ function Header() {
           <h1 className="sitename">Shamamis</h1>
           <span>.</span>
         </a>
+
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <a href="#hero" className="active">
+              <a href="#" className="active">
                 Home
               </a>
             </li>
@@ -24,51 +43,29 @@ function Header() {
               <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#courses">Courses</a>
             </li>
             <li>
-              <a href="#pricing">Pricing</a>
+              <a href="#conferences">Conferences</a>
             </li>
             <li>
-              <a href="blog.html">Blog</a>
-            </li>
-            <li className="dropdown">
-              <a href="#">
-                <span>Dropdown</span>{" "}
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">Dropdown 1</a>
-                </li>
-                <li className="dropdown">
-                  <a href="#">
-                    <span>Deep Dropdown</span>{" "}
-                    <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#">Deep Dropdown 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Dropdown 2</a>
-                </li>
-              </ul>
+              <a href="#recent-posts">Blog</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-        <a className="cta-btn" href="#about">
-          Get Started
-        </a>
+
+        <button
+          type="button"
+          className="mobile-nav-toggle d-xl-none"
+          onClick={toggleMobileNav}
+          aria-label="Toggle navigation">
+          <i className={isMobileNavOpen ? "bi bi-x" : "bi bi-list"}></i>
+        </button>
+
+        <a />
       </div>
     </header>
   );

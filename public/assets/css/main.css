@@ -4996,3 +4996,38 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+.filter-container-compact {
+  max-width: 250px; /* Makes the filter bar smaller */
+  margin-left: auto; /* Aligns it to the right */
+  margin-right: 0;
+}
+
+.filter-container-compact .form-control-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+.filter-container-compact .btn-sm {
+  padding: 0.25rem 0.7rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+  margin-left: 5px;
+}
+
+.pagination-arrows .btn {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.85rem;
+  border-radius: 50px;
+}
+
+.pagination-arrows .btn:disabled {
+  opacity: 0.5;
+}
+
+.pagination-arrows span {
+  font-weight: 500;
+  color: var(--default-color);
+}
